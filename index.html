@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container custom-container">
+      <form>
+        <div class="fw-bold">Name <span class="text-danger">*</span></div>
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control border border-secondary"
+              placeholder="First name"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control border border-secondary"
+              placeholder="Last name"
+            />
+          </div>
+          <br /><br />
+          <div class="form-group">
+            <div class="fw-bold">Email <span class="text-danger">*</span></div>
+            <input
+              type="email"
+              class="form-control border border-secondary"
+              id="email"
+              placeholder="name@example.com"
+            /><br /><br />
+          </div>
+
+          <div class="fw-bold">
+            Your Experience <span class="text-danger">*</span>
+          </div>
+          <div class="rating">
+            <input type="radio" name="rating" value="5" id="5" /><label for="5"
+              >☆</label
+            >
+            <input type="radio" name="rating" value="4" id="4" /><label for="4"
+              >☆</label
+            >
+            <input type="radio" name="rating" value="3" id="3" /><label for="3"
+              >☆</label
+            >
+            <input type="radio" name="rating" value="2" id="2" /><label for="2"
+              >☆</label
+            >
+            <input type="radio" name="rating" value="1" id="1" /><label for="1"
+              >☆</label
+            >
+          </div>
+          <div>Overall,how would you rate you experience with us?</div>
+          <br /><br />
+          <div class="fw-bold">
+            How satisfied are you with <span class="text-danger">*</span>
+          </div>
+          <div class="row text-center p-2">
+            <div class="col"></div>
+            <div class="col">Very Unsatisfied</div>
+            <div class="col">Unsatisfied</div>
+            <div class="col">Neutral</div>
+            <div class="col">Satisfied</div>
+            <div class="col">Very Satisfied</div>
+          </div>
+          <div class="row bg-secondary text-white rounded p-2">
+            <div class="col">Purchase</div>
+            <div class="col text-center">
+              <input type="radio" name="0" id="check" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="0" id="check" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="0" id="check" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="0" id="check" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="0" id="check" />
+            </div>
+          </div>
+          <div class="row p-2">
+            <div class="col">Service</div>
+            <div class="col text-center">
+              <input type="radio" name="1" id="check1" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="1" id="check1" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="1" id="check1" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="1" id="check1" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="1" id="check1" />
+            </div>
+          </div>
+          <div class="row bg-secondary text-white p-2 rounded">
+            <div class="col">Company Overall</div>
+            <div class="col text-center">
+              <input type="radio" name="2" id="check2" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="2" id="check2" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="2" id="check2" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="2" id="check2" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="2" id="check2" />
+            </div>
+          </div>
+          <br /><br />
+
+          <div class="fw-bold">
+            How likely are you with <span class="text-danger">*</span>
+          </div>
+          <div class="row text-center">
+            <div class="col"></div>
+            <div class="col">Very unlikely</div>
+            <div class="col">Unlikely</div>
+            <div class="col">Neutral</div>
+            <div class="col">likely</div>
+            <div class="col">Very likely</div>
+          </div>
+          <div class="row bg-secondary text-white rounded p-2">
+            <div class="col">Buy from us again</div>
+            <div class="col text-center">
+              <input type="radio" name="3" id="check3" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="3" id="check3" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="3" id="check3" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="3" id="check3" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="3" id="check3" />
+            </div>
+          </div>
+          <div class="row p-2">
+            <div class="col">Recommend our product to others</div>
+            <div class="col text-center">
+              <input type="radio" name="4" id="check4" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="4" id="check4" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="4" id="check4" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="4" id="check4" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="4" id="check4" />
+            </div>
+          </div>
+          <div class="row bg-secondary text-white rounded p-2">
+            <div class="col">Recommend our company to others</div>
+            <div class="col text-center">
+              <input type="radio" name="5" id="check5" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="5" id="check5" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="5" id="check5" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="5" id="check5" />
+            </div>
+            <div class="col text-center">
+              <input type="radio" name="5" id="check5" />
+            </div>
+          </div>
+          <br /><br />
+          <div class="fw-bold">Additional comments or suggestions</div>
+        </div>
+        <div class="form-group">
+          <textarea
+            class="form-control border border-secondary"
+            id="text area"
+            rows="5"
+          ></textarea>
+        </div>
+        <br />
+        <button type="button" class="btn btn-secondary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
